@@ -5,6 +5,12 @@ import { useRouter } from "next/router";
 function DetailsPage() {
   const router = useRouter();
 
+  console.log(router.query.newsId);
+  const newsId = router.query.newsId;
+
+  //send a request to the backend API
+  // to fetch the news item with newId
+
   return <h1>The Details page</h1>;
 }
 
